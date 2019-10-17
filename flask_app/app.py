@@ -33,7 +33,7 @@ def index():
 @app.route("/data")
 def json_data():
     cur = get_db().cursor()
-    fos = cur.execute("select * from pending limit 500").fetchall()
+    fos = cur.execute("select * from pending limit 1500").fetchall()
     return jsonify(fos)
 
 if __name__ == "__main__":
