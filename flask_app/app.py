@@ -30,10 +30,14 @@ def close_connection(exception):
 def index():
     return render_template("index.html")
 
+@app.route("/div")
+def index_d():
+    return render_template("index_d.html")
+
 @app.route("/data")
 def json_data():
     cur = get_db().cursor()
-    fos = cur.execute("select * from pending limit 1500").fetchall()
+    fos = cur.execute("select * from pending where SKILL_1 in ('MMP', 'MST') limit 5000").fetchall()
     return jsonify(fos)
 
 if __name__ == "__main__":
