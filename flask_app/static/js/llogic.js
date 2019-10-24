@@ -19,7 +19,7 @@ var overlays = {
 };
 
 // Create a control for our layers, add our overlay layers to it
-L.control.layers(null, overlays).addTo(map);
+//L.control.layers(null, overlays).addTo(map);
 
 // Create a legend to display information about our map
 var info = L.control({
