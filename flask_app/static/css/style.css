@@ -5,8 +5,25 @@ body {
 }
 
 /* set map, body, and html to 100% of the screen size */
-#map,
-body,
+#map{
+    height: 400px;
+  }
+
 html {
   height: 100%;
 }
+
+.jumbotron{
+  background-color:#042037;
+  text-align:center;
+  max-height: 175px
+}
+.jumbotron h1{
+  color: #fff;
+}
+.jumbotron p{
+  color: #fff;
+}
+
+
+
