@@ -23,12 +23,29 @@
 </head>
 
 <body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="http://localhost:5000/#" class="navbar-brand">Field Work</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav ml-auto">
+              <a href="http://localhost:5000/diagram" class="nav-item nav-link active">Diagram</a>
+              <a href="http://localhost:5000/data" class="nav-item nav-link active">Data</a>
+
+          </div>
+
+      </div>
+  </nav>
+
   <!-- Header for the DB -->
   <div class="col-md-1"></div>
   <div class="col-md-11">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1>Pending Field Metering Work</h1>
+        <h1>Pending Field Work</h1>
         <p>Explore the map to see the work</p>
       </div>
     </div>

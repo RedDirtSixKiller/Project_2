@@ -34,6 +34,10 @@ def index():
 def index_d():
     return render_template("index_d.html")
 
+@app.route("/diagram")
+def index_diagram():
+    return render_template("diagram.html")
+
 @app.route("/data")
 def json_data():
     cur = get_db().cursor()
