@@ -4,13 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>Project Diagram</title>
-
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 
 <body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="http://localhost:5000/#" class="navbar-brand">Field Work</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+            <a href="http://localhost:5000/diagram" class="nav-item nav-link active">Diagram</a>
+            <a href="http://localhost:5000/data" class="nav-item nav-link active">Data</a>
+
+        </div>
+
+    </div>
+</nav>
   <!-- just putting the diagram on a page -->
 
   <img src="static/img/Project_2 Diagram.png" alt="project diagram">
