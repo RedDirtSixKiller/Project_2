@@ -41,7 +41,7 @@ def index_diagram():
 @app.route("/data")
 def json_data():
     cur = get_db().cursor()
-    fos = cur.execute("select * from pending where SKILL_1 in ('MMP', 'MST') and PREM_LONGITUDE < 0 limit 5000").fetchall()
+    fos = cur.execute("select * from pending where SKILL_1 in ('MMP', 'MST') and PREM_LONGITUDE < 0 /*limit 5000*/").fetchall()
     return jsonify(fos)
 
 if __name__ == "__main__":
